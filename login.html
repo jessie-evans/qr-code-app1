@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Teacher Login</h2>
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="staffId">Staff ID</label>
+                <input type="text" id="staffId" placeholder="Enter Staff id" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <div class="input-group">
+                <input type="checkbox" id="showPassword">
+                <label for="showPassword">Show Password</label>
+            </div>
+            <button type="submit">Login</button>
+            <p id="error-message" class="error-message"></p>
+            <p><a href="#" id="forgotPassword">Forgot Password?</a></p>
+        </form>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!-- Index.html file -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+          href="scan.css">
+    <title>QR Code Scanner / Reader
+    </title>
+</head>
+
+<body>
+    <div class="container" style="display: flex;flex-direction: column; align-items: center; margin-top: 20px; border-radius: 20px;">
+        <h1>Record Attendance</h1>
+        <div class="section" style="display: flex; flex-direction: column;
+        justify-content: center; align-items: center;">
+            <div id="my-qr-reader" style="width: 500px; border-radius: 20px; border-width: 5px;">
+            </div>
+        </div>
+    </div>
+    <script
+        src="https://unpkg.com/html5-qrcode">
+    </script>
+    <script src="scan.js"></script>
+</body>
+
+</html>

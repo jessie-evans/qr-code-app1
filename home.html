@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Home Page</title>
+    <link rel="stylesheet" href="home.css"> <!-- Optional: Separate CSS file -->
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#" id="aboutUsLink">About Us</a></li> <!-- Updated About Us link -->
+            <li><button id="scan-qr">Scan QR Code</button></li>
+            <li><button id="logoutButton">Logout</button></li>
+        </ul>
+    </nav>
+
+    <!-- Main content of the page -->
+    <div class="home-container">
+        <h1>Welcome to the College Portal</h1>
+        <p>This is the teacher's dashboard. You can now access the attendance management system.</p>
+
+        <!-- Image below the welcome message -->
+        <img src="https://www.vignanlara.org/images/main-slider/lara5.jpg" alt="College Image" id="collegeImage" style="width: 100%; height: auto; margin-top: 20px;">
+    </div>
+
+    <!-- About Us section, initially hidden -->
+    <section id="aboutUs" style="display: none; margin-top: 20px;">
+        <h2>About Our College</h2>
+        <p>Vignan's Lara Institute of Technology & Science, was established with the aim of providing quality technical education on par with international standards at Vadlamudi, Guntur District in the year 2007. It is approved by All India Council for Technical Education, New Delhi and affiliated to Jawaharlal Nehru Technological University Kakinada, Kakinada. The college is located in the green, transgenic and rural sylvan environs of Vadlamudi, on the Guntur-Tenali highway, about 14 km from Guntur and 11 km from Tenali. The college is a virtual haven of rural quiet and idyllic beauty spread over a large area. The splendid avenue and sprawling playgrounds and the verdure in and around the campus make it one of the most preferred choices for the aspirants of Engineering studies. The college has well qualified young and experienced Ph.Ds and M.Tech staff supported by Technical Staff.</p>
+        
+    </section>
+
+    <div class="camera-wrapper">
+        <video id="camera-stream" width="300" height="300" autoplay style="display: none;"></video>
+    </div>
+
+    <!-- Include the home.js script -->
+    <script src="home.js"></script>
+</body>
+</html>
